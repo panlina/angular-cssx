@@ -1,0 +1,21 @@
+{
+  "name": "angular-cssx",
+  "homepage": "https://github.com/panlina/angular-cssx",
+  "authors": [
+    "Jack Lu <jacklu@jacklu.me>"
+  ],
+  "description": "cssx for angular",
+  "keywords": [
+	"cssx",
+	"angular"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "cssx": "https://github.com/panlina/cssx.git",
+    "angular": "*"
+  }
+}
