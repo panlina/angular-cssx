@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src=bower_components/jquery/dist/jquery.js></script>
+	<script src=bower_components/specificity/specificity.js></script>
+	<script src=bower_components/cssx/cssx.js></script>
+	<script src=bower_components/cssx/parse.js></script>
+	<script src=bower_components/angular/angular.js></script>
+	<script src=angular-cssx.js></script>
+</head>
+<body ng-app=. cssx=s>
+	<div id=d>abc</div>
+	<div id=e>def</div>
+	<script>
+		angular.module('.', ['angular-cssx']);
+	</script>
+	<style id=s>
+		div {
+			"before": "a:"
+		}
+
+		#e {
+			"before": "b:"
+		}
+	</style>
+</body>
+</html>
