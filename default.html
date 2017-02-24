@@ -12,16 +12,26 @@
 <body ng-app=. cssx=s>
 	<div id=d>abc</div>
 	<div id=e>def</div>
+	<input>
 	<script>
 		angular.module('.', ['angular-cssx']);
 	</script>
-	<style id=s>
-		div {
-			"before": "a:"
+	<style>
+		.info {
+			color: blue;
 		}
 
-		#e {
-			"before": "b:"
+		.error {
+			color: red;
+		}
+	</style>
+	<style id=s>
+		div { "class": "info" }
+		#e { "class": "error" }
+
+		input {
+			"before": "(label): ",
+			"attr": { "placeholder": "(placeholder)" }
 		}
 	</style>
 </body>
