@@ -2,7 +2,7 @@
 	.directive('cssx', function (cssxConfig) {
 		return {
 			compile: function (element, attr) {
-				var text = document.getElementById(attr.cssx).innerHTML;
+				var text = element.find('#' + attr.cssx).html();
 				var elementrule = cssx(cssx.parse(text))(element);
 				for (var id in elementrule) {
 					var element = elementrule[id].element;
